@@ -1,0 +1,27 @@
+.modal-d {position: fixed;left: 0;top: 0;right: 0;bottom: 0;z-index: 1001;-webkit-overflow-scrolling: touch;outline: 0;overflow:scroll;margin: 0 auto;}
+.modal-dialog {position: absolute;left: 50%;top: 50%;-webkit-transform: translate(-50%,-50%);width: 80%;background: #fff;border-radius:3px;}
+.modal-header{border-top-left-radius: 3px;border-top-right-radius: 3px;background-color: #DD2727;color:#fff;text-align: center;padding: 1rem;}
+.modal-body{position:relative;min-height:5rem;max-height:10rem;padding: 1.5rem;}
+.modal-body input{border:1px solid #e5e5e5;font-size:1.4rem;padding:.5rem;}
+.modal-body:after{content: "";display:block;position:absolute;bottom:0;left:0;height:1px;width:100%;background-color: #e5e5e5; transform: scaleY(0.5);-webkit-transform: scaleY(0.5);}
+.modal-footer>a{display:block;position:relative;width:0;padding:1.2rem 0;text-align: center;}
+.modal-footer>a:not(first):before{content: "";display:block;position:absolute;top:0;left:0;height:100%;width:1px;background-color: #e5e5e5; transform: scaleX(0.5);-webkit-transform: scaleX(0.5);}
+.modal-toast {position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);min-width: 60%;width: 80%;padding: 2rem;background: rgba(0, 0, 0, 0.8);color: #fff;border-radius: 3px;box-sizing: border-box;}
+.modal-toast.icon{text-align: center;width:auto;}
+.button.btn-default{color: #888;}
+.button.btn-active{color: #DD2727;}
+.modal-backup {position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 1000;background: rgba(0, 0, 0, 0.5);}
+.modal-backup.toast{background: rgba(255, 255, 255, 0);}
+
+.fade-enter-active, .fade-leave-active {transition: opacity .5s;-webkit-transition: opacity .5s}
+.fade-enter, .fade-leave-active {opacity: 0}
+.loading-out{width: 4rem;height: 4rem;-webkit-animation: loadingAmt 0.5s linear infinite;margin: 0 auto;padding: .5rem;border-radius: 50%;background: -webkit-linear-gradient(#444,#eee);}
+.loading-in{width: 4rem;height: 4rem;border-radius: 50%;background: #2a2a2a;}
+@-webkit-keyframes loadingAmt{
+    0%   {-webkit-transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);}
+}
+@keyframes loadingAmt{
+    0%   {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
